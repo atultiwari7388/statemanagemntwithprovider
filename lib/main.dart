@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:state_management_provider/home.screen.dart';
-import 'package:state_management_provider/stateful_widget_example.screen.dart';
+import 'package:state_management_provider/state_management_example.screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const StatefulWidgetExampleScreen(),
+      home: const StateManagementExampleScreen(),
     );
   }
 }
