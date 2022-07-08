@@ -17,7 +17,7 @@ class _MyFavScreenState extends State<MyFavScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("My Fav List"),
+        title: const Text("My Fav List"),
         centerTitle: true,
         elevation: 1.0,
       ),

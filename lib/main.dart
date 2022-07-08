@@ -4,7 +4,9 @@ import 'package:state_management_provider/provider/count_provider.dart';
 import 'package:state_management_provider/provider/favorite_provider.dart';
 import 'package:state_management_provider/provider/slider_provider.dart';
 import 'package:state_management_provider/provider/theme_switcher_provider.dart';
-import 'package:state_management_provider/screens/dark_theme_screen.dart';
+import 'package:state_management_provider/screens/notifylistener.screen.dart';
+
+import 'provider/notifylistener_provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,6 +26,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => SliderProvider()),
         ChangeNotifierProvider(create: (_) => FavoriteItemProvider()),
         ChangeNotifierProvider(create: (_) => ThemeSwitcherProvider()),
+        ChangeNotifierProvider(create: (_) => NotifyListenerProviderExample()),
       ],
       child: Builder(
         builder: (BuildContext context) {
@@ -45,7 +48,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
-            home: const ThemeSwitcherExample(),
+            home: NotifyListenerStatelessExample(),
           );
         },
       ),

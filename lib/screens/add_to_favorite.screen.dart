@@ -29,12 +29,12 @@ class _AddToFavoriteExampleState extends State<AddToFavoriteExample> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MyFavScreen(),
+                    builder: (context) => const MyFavScreen(),
                   ),
                 );
               },
-              child: Icon(Icons.favorite)),
-          SizedBox(width: 20),
+              child: const Icon(Icons.favorite)),
+          const SizedBox(width: 20),
         ],
       ),
       body: Column(
