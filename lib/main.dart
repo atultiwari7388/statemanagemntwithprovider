@@ -4,7 +4,7 @@ import 'package:state_management_provider/provider/count_provider.dart';
 import 'package:state_management_provider/provider/favorite_provider.dart';
 import 'package:state_management_provider/provider/slider_provider.dart';
 import 'package:state_management_provider/provider/theme_switcher_provider.dart';
-import 'package:state_management_provider/screens/notifylistener.screen.dart';
+import 'package:state_management_provider/screens/login_screen.dart';
 
 import 'provider/notifylistener_provider.dart';
 
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
-            home: NotifyListenerStatelessExample(),
+            home: const LoginScreen(),
           );
         },
       ),
